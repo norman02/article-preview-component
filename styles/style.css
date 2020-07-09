@@ -34,21 +34,27 @@ h1 {
 
 .container {
     display: flex;
+    max-width: 1100px;
+    min-width: 350px;
 }
 
 .main-container {
     width: 50%;
-
+    border-radius: 10px;   
 }
 
 .main-image {
     width: 28rem;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 2px 15px 2px var(--GrayishBlue);
 }
 
 .content-container {
     background-color: white;
     flex-direction: column;
     padding: 4rem;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 2px 2px 15px 2px var(--GrayishBlue);
 }
 
 .contact {
@@ -58,7 +64,7 @@ h1 {
 }
 
 .avatar-container {
-    width: 30rem;
+    width: 16rem;
 }
 
 #avatar {
