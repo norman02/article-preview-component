@@ -32,6 +32,10 @@ main {
     max-width: 800px;
     overflow: hidden;
     border-radius: 10px;
+    
+}
+
+.shadow {
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -81,13 +85,42 @@ h1 {
     align-items: center;
 }
 
-#share {
-    display: block;
+#share-button {
     background-color: var(--LightGrayishBlue);
     padding: 10px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    border-radius: 50%; 
+}
+
+.social {
+    position: relative;
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social::after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 24px solid transparent;
+	border-top-color: var(--VeryDarkGrayishBlue);
+	border-bottom: 0;
+	margin-left: -24px;
+	margin-bottom: -24px;
+}
+
+#share {
+    color: var(--LightGrayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
 }
 
 @media only screen and (max-width: 850px) {
